@@ -1,8 +1,6 @@
 def solution(my_string):
     answer = ''
-    s = set()
     for i in my_string:
-        if i not in s:
+        if i not in answer:
             answer += i
-            s.add(i)
     return answer
