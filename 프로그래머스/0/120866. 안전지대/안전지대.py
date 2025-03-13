@@ -1,4 +1,5 @@
 def solution(board):
+    answer = 0
     n = len(board)
     danger = []
     for _ in range(n):
@@ -6,8 +7,6 @@ def solution(board):
         for _ in range(n):
             row.append(0)
         danger.append(row)
-    
-    answer = 0
     
     for i in range(n):
         for j in range(n):
