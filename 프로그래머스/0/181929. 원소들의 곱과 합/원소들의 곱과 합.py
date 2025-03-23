@@ -4,10 +4,9 @@ def solution(num_list):
     mul_n = 1
     for i in num_list:
         sum_n += i
-        square = sum_n ** 2
         mul_n *= i
-        if mul_n > square:
+        if mul_n > sum_n ** 2:
             answer = 0
-        elif mul_n < square:
+        elif mul_n < sum_n ** 2:
             answer = 1
     return answer
